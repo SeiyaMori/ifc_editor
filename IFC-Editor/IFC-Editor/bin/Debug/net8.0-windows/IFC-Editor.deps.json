@@ -9,6 +9,8 @@
       "IFC-Editor/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Sqlite": "8.0.3",
+          "Xbim.Essentials": "6.0.445",
+          "Xbim.Geometry": "5.1.437",
           "Xbim.WindowsUI": "5.1.228"
         },
         "runtime": {
@@ -42,6 +44,14 @@
           "lib/net8.0/Microsoft.Data.Sqlite.dll": {
             "assemblyVersion": "8.0.3.0",
             "fileVersion": "8.0.324.11510"
+          }
+        }
+      },
+      "Microsoft.Database.ManagedEsent/2.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Esent.Interop.dll": {
+            "assemblyVersion": "1.9.4.1",
+            "fileVersion": "1.9.4.1"
           }
         }
       },
@@ -247,7 +257,7 @@
       },
       "SQLitePCLRaw.core/2.1.6": {
         "dependencies": {
-          "System.Memory": "4.5.4"
+          "System.Memory": "4.5.3"
         },
         "runtime": {
           "lib/netstandard2.0/SQLitePCLRaw.core.dll": {
@@ -372,7 +382,7 @@
         }
       },
       "System.ComponentModel.Annotations/4.6.0": {},
-      "System.Memory/4.5.4": {},
+      "System.Memory/4.5.3": {},
       "System.Runtime/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -392,17 +402,28 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "Xbim.Common/5.1.341": {
+      "Xbim.Common/6.0.445": {
         "dependencies": {
-          "Microsoft.Extensions.Logging": "8.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
-          "System.Memory": "4.5.4"
+          "Microsoft.Extensions.DependencyInjection": "8.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.0"
         },
         "runtime": {
-          "lib/netcoreapp3.1/Xbim.Common.dll": {
-            "assemblyVersion": "5.1.0.0",
-            "fileVersion": "5.1.341.0"
+          "lib/net8.0/Xbim.Common.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.445.0"
           }
+        }
+      },
+      "Xbim.Essentials/6.0.445": {
+        "dependencies": {
+          "Xbim.Common": "6.0.445",
+          "Xbim.IO.Esent": "6.0.445",
+          "Xbim.IO.MemoryModel": "6.0.445",
+          "Xbim.Ifc": "6.0.445",
+          "Xbim.Ifc2x3": "6.0.445",
+          "Xbim.Ifc4": "6.0.445",
+          "Xbim.Ifc4x3": "6.0.445",
+          "Xbim.Tessellator": "6.0.445"
         }
       },
       "Xbim.Geometry/5.1.437": {
@@ -416,8 +437,8 @@
           "Microsoft.Extensions.Logging": "8.0.0",
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
           "System.Threading.Tasks": "4.3.0",
-          "Xbim.Ifc": "5.1.341",
-          "Xbim.Tessellator": "5.1.341"
+          "Xbim.Ifc": "6.0.445",
+          "Xbim.Tessellator": "6.0.445"
         },
         "runtime": {
           "lib/net472/Xbim.Geometry.Engine.Interop.dll": {
@@ -426,55 +447,89 @@
           }
         }
       },
-      "Xbim.Ifc/5.1.341": {
+      "Xbim.Ifc/6.0.445": {
         "dependencies": {
-          "Xbim.IO.MemoryModel": "5.1.341"
+          "Xbim.Common": "6.0.445",
+          "Xbim.IO.Esent": "6.0.445",
+          "Xbim.IO.MemoryModel": "6.0.445",
+          "Xbim.Ifc2x3": "6.0.445",
+          "Xbim.Ifc4": "6.0.445",
+          "Xbim.Ifc4x3": "6.0.445"
         },
         "runtime": {
-          "lib/netcoreapp3.1/Xbim.Ifc.dll": {
-            "assemblyVersion": "5.1.0.0",
-            "fileVersion": "5.1.341.0"
+          "lib/net8.0/Xbim.Ifc.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.445.0"
           }
         }
       },
-      "Xbim.Ifc2x3/5.1.341": {
+      "Xbim.Ifc2x3/6.0.445": {
         "dependencies": {
-          "Xbim.Ifc4": "5.1.341"
+          "Xbim.Common": "6.0.445",
+          "Xbim.Ifc4": "6.0.445"
         },
         "runtime": {
-          "lib/netcoreapp3.1/Xbim.Ifc2x3.dll": {
-            "assemblyVersion": "5.1.0.0",
-            "fileVersion": "5.1.341.0"
+          "lib/net8.0/Xbim.Ifc2x3.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.445.0"
           }
         }
       },
-      "Xbim.Ifc4/5.1.341": {
+      "Xbim.Ifc4/6.0.445": {
         "dependencies": {
-          "Xbim.Common": "5.1.341"
+          "Xbim.Common": "6.0.445"
         },
         "runtime": {
-          "lib/netcoreapp3.1/Xbim.Ifc4.dll": {
-            "assemblyVersion": "5.1.0.0",
-            "fileVersion": "5.1.341.0"
+          "lib/net8.0/Xbim.Ifc4.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.445.0"
           }
         }
       },
-      "Xbim.IO.MemoryModel/5.1.341": {
+      "Xbim.Ifc4x3/6.0.445": {
         "dependencies": {
-          "Xbim.Ifc2x3": "5.1.341"
+          "Xbim.Common": "6.0.445",
+          "Xbim.Ifc4": "6.0.445"
         },
         "runtime": {
-          "lib/netcoreapp3.1/Xbim.IO.MemoryModel.dll": {
-            "assemblyVersion": "5.1.0.0",
-            "fileVersion": "5.1.341.0"
+          "lib/net8.0/Xbim.Ifc4x3.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.445.0"
+          }
+        }
+      },
+      "Xbim.IO.Esent/6.0.445": {
+        "dependencies": {
+          "Microsoft.Database.ManagedEsent": "2.0.3",
+          "Xbim.Common": "6.0.445",
+          "Xbim.IO.MemoryModel": "6.0.445"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xbim.IO.Esent.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.445.0"
+          }
+        }
+      },
+      "Xbim.IO.MemoryModel/6.0.445": {
+        "dependencies": {
+          "Xbim.Common": "6.0.445",
+          "Xbim.Ifc2x3": "6.0.445",
+          "Xbim.Ifc4": "6.0.445",
+          "Xbim.Ifc4x3": "6.0.445"
+        },
+        "runtime": {
+          "lib/net8.0/Xbim.IO.MemoryModel.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.445.0"
           }
         }
       },
       "Xbim.ModelGeometry.Scene/5.1.437": {
         "dependencies": {
           "Xbim.Geometry.Engine.Interop": "5.1.437",
-          "Xbim.Ifc": "5.1.341",
-          "Xbim.Tessellator": "5.1.341"
+          "Xbim.Ifc": "6.0.445",
+          "Xbim.Tessellator": "6.0.445"
         },
         "runtime": {
           "lib/net472/Xbim.ModelGeometry.Scene.dll": {
@@ -483,14 +538,16 @@
           }
         }
       },
-      "Xbim.Tessellator/5.1.341": {
+      "Xbim.Tessellator/6.0.445": {
         "dependencies": {
-          "Xbim.Ifc2x3": "5.1.341"
+          "Xbim.Common": "6.0.445",
+          "Xbim.Ifc2x3": "6.0.445",
+          "Xbim.Ifc4": "6.0.445"
         },
         "runtime": {
-          "lib/netcoreapp3.1/Xbim.Tessellator.dll": {
-            "assemblyVersion": "5.1.0.0",
-            "fileVersion": "5.1.341.0"
+          "lib/net8.0/Xbim.Tessellator.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.445.0"
           }
         }
       },
@@ -540,6 +597,13 @@
       "sha512": "sha512-1euU97SivROH7nVIh2c/V63e0nQ73Txr/YlysB7fJuTV8LcfeL9WO1gdiJWcRIDoq8/McxcTc7evY6JJ1pD95w==",
       "path": "microsoft.data.sqlite.core/8.0.3",
       "hashPath": "microsoft.data.sqlite.core.8.0.3.nupkg.sha512"
+    },
+    "Microsoft.Database.ManagedEsent/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-liyUzhHNir3ix0VKzeP08VuXDWGSyYQ/6y9lTUX2bhfh/AGs56tpS8Oj08ap+idb4FIZAwDfAbA7uARTj56CmA==",
+      "path": "microsoft.database.managedesent/2.0.3",
+      "hashPath": "microsoft.database.managedesent.2.0.3.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore/8.0.3": {
       "type": "package",
@@ -716,12 +780,12 @@
       "path": "system.componentmodel.annotations/4.6.0",
       "hashPath": "system.componentmodel.annotations.4.6.0.nupkg.sha512"
     },
-    "System.Memory/4.5.4": {
+    "System.Memory/4.5.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
-      "path": "system.memory/4.5.4",
-      "hashPath": "system.memory.4.5.4.nupkg.sha512"
+      "sha512": "sha512-3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
+      "path": "system.memory/4.5.3",
+      "hashPath": "system.memory.4.5.3.nupkg.sha512"
     },
     "System.Runtime/4.3.0": {
       "type": "package",
@@ -751,12 +815,19 @@
       "path": "system.threading.tasks/4.3.0",
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
     },
-    "Xbim.Common/5.1.341": {
+    "Xbim.Common/6.0.445": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-E3DDM1NnsEqH+gBO9jfsC7IQx6MuwW3cCqur0NEuoIihLZ/B7S4JqEC74ChdfduWTNv+PDqVgpAupDn8g80CIQ==",
-      "path": "xbim.common/5.1.341",
-      "hashPath": "xbim.common.5.1.341.nupkg.sha512"
+      "sha512": "sha512-fnr/swJmzGJM3XPWRUvB/XHBwzP2ewhLNjFWWnsp8qtkZ6qBHfbKOuhWbD14aWEWckFiSGMNEDV3Br5zoq/wcA==",
+      "path": "xbim.common/6.0.445",
+      "hashPath": "xbim.common.6.0.445.nupkg.sha512"
+    },
+    "Xbim.Essentials/6.0.445": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-X1hO0UG22ROGunKXkRgS4wXBpiqDqSYrZVRN3LlKHpQQwJSus9hGX2tmHvn2Vch2LJZT+h7abxMn4qbAi4Kvmw==",
+      "path": "xbim.essentials/6.0.445",
+      "hashPath": "xbim.essentials.6.0.445.nupkg.sha512"
     },
     "Xbim.Geometry/5.1.437": {
       "type": "package",
@@ -772,33 +843,47 @@
       "path": "xbim.geometry.engine.interop/5.1.437",
       "hashPath": "xbim.geometry.engine.interop.5.1.437.nupkg.sha512"
     },
-    "Xbim.Ifc/5.1.341": {
+    "Xbim.Ifc/6.0.445": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-sTYF7jQZu6y8raGd1WYpp33zkso8loTET0q4IJ9VtKDy+a5HWyvmgWwhEqxrU8C/VXAASWtAagngOKgtK9EaPg==",
-      "path": "xbim.ifc/5.1.341",
-      "hashPath": "xbim.ifc.5.1.341.nupkg.sha512"
+      "sha512": "sha512-7/ExM8YSF4jE3yOY6QYTuEjmy4LcYrYb3JfXqOpm13006IrEYZq0DtKV4ICHKfIZpZSCdlhG7W+DDtgon6JYQA==",
+      "path": "xbim.ifc/6.0.445",
+      "hashPath": "xbim.ifc.6.0.445.nupkg.sha512"
     },
-    "Xbim.Ifc2x3/5.1.341": {
+    "Xbim.Ifc2x3/6.0.445": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-azbyfnb+A9F3J9wd5nAjUtKyRF8wySTwtfK3kcPVe87k6Z1P0JHU7v40m7ZnVzwGTLq1NichnoQ/Y21MLftsSg==",
-      "path": "xbim.ifc2x3/5.1.341",
-      "hashPath": "xbim.ifc2x3.5.1.341.nupkg.sha512"
+      "sha512": "sha512-iew+waZ5fM5cB50rZWc+4brsFupCp/CfNwLkxWX2OZmnBt+lhXI5zSAUKxzQI/c7qzV3mskYUdpjtbW1jUHn8A==",
+      "path": "xbim.ifc2x3/6.0.445",
+      "hashPath": "xbim.ifc2x3.6.0.445.nupkg.sha512"
     },
-    "Xbim.Ifc4/5.1.341": {
+    "Xbim.Ifc4/6.0.445": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-mNZ9GohmvXsogFimTMVi/SDWFwp3DCxKU+X5KhctjajfzSCWQhgeHI+0uuze5GWRhaHGeNCIDZd5ABrLk/MIBg==",
-      "path": "xbim.ifc4/5.1.341",
-      "hashPath": "xbim.ifc4.5.1.341.nupkg.sha512"
+      "sha512": "sha512-EsJvTVxrjOrLEzk+ocTqr1SuphpGzeIA/kO+6q6rHG+pCSYebie8srdc0RwbvhQn58KJbB2jSHt9ZpD4VsWJ7Q==",
+      "path": "xbim.ifc4/6.0.445",
+      "hashPath": "xbim.ifc4.6.0.445.nupkg.sha512"
     },
-    "Xbim.IO.MemoryModel/5.1.341": {
+    "Xbim.Ifc4x3/6.0.445": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-rMAH4+8yZ0RPZ456WU6FuSgufvwjUDkhC/xMti+JQJ3smMqFxbaMePoi8HSoJ9LmVJRRSsg/alVvB0Uv7o3AhQ==",
-      "path": "xbim.io.memorymodel/5.1.341",
-      "hashPath": "xbim.io.memorymodel.5.1.341.nupkg.sha512"
+      "sha512": "sha512-4O9G29t9APJ/f5sN6FXcshLzNN5SPO78cBxTdFX1cEZ/V542UYkZeZ+NeUOseMB2n8A5H3X1xV+1f+oUrtYsCw==",
+      "path": "xbim.ifc4x3/6.0.445",
+      "hashPath": "xbim.ifc4x3.6.0.445.nupkg.sha512"
+    },
+    "Xbim.IO.Esent/6.0.445": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-i6yfbCFZ5Xo+l34VP3O6XUZBAvPwZDvbW0SdmKsY0nYVqgwVVr8MWKhbPrp3JeoL+jzFIXTOUz5rlpX37RP/CA==",
+      "path": "xbim.io.esent/6.0.445",
+      "hashPath": "xbim.io.esent.6.0.445.nupkg.sha512"
+    },
+    "Xbim.IO.MemoryModel/6.0.445": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IprklUkdFXN+KPM2050E7h0GnNSz/i/0ozSUpddCTFQtWTlKbBk6q9VqtbvYwn36485RrSCNswNh+bBhrTsbyw==",
+      "path": "xbim.io.memorymodel/6.0.445",
+      "hashPath": "xbim.io.memorymodel.6.0.445.nupkg.sha512"
     },
     "Xbim.ModelGeometry.Scene/5.1.437": {
       "type": "package",
@@ -807,12 +892,12 @@
       "path": "xbim.modelgeometry.scene/5.1.437",
       "hashPath": "xbim.modelgeometry.scene.5.1.437.nupkg.sha512"
     },
-    "Xbim.Tessellator/5.1.341": {
+    "Xbim.Tessellator/6.0.445": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-FGfQiLoLjUfJQNk3+0TkwLeVO6mnxQ7CKO+uHCHowyJrI/3sd8f2M6IjSvNbkYLe9M5sAaL9wQQb26yx0y4gnQ==",
-      "path": "xbim.tessellator/5.1.341",
-      "hashPath": "xbim.tessellator.5.1.341.nupkg.sha512"
+      "sha512": "sha512-FDGsbMYtnA5qpXCaDhqMvAY5sGx5hGcxWIajP7iOhJL/7S7vRT00uPV2swWnzTdOhIS3dy0KgbTx3EaqW683ow==",
+      "path": "xbim.tessellator/6.0.445",
+      "hashPath": "xbim.tessellator.6.0.445.nupkg.sha512"
     },
     "Xbim.WindowsUI/5.1.228": {
       "type": "package",

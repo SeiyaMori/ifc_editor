@@ -49,6 +49,14 @@
               "target": "Package",
               "version": "[8.0.3, )"
             },
+            "Xbim.Essentials": {
+              "target": "Package",
+              "version": "[6.0.445, )"
+            },
+            "Xbim.Geometry": {
+              "target": "Package",
+              "version": "[5.1.437, )"
+            },
             "Xbim.WindowsUI": {
               "target": "Package",
               "version": "[5.1.228, )"

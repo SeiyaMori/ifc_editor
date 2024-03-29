@@ -10,6 +10,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Xbim.Ifc;
+using Xbim.ModelGeometry.Scene;
 
 namespace IFC_Editor
 {
@@ -21,6 +23,16 @@ namespace IFC_Editor
         public MainWindow()
         {
             InitializeComponent();
+
+            /*
+            var ifcModel = IfcStore.Open(@"C:\Users\Seiya\Desktop\example_building.ifc");
+            System.Diagnostics.Debug.WriteLine("HELLO");
+            System.Diagnostics.Debug.WriteLine(ifcModel.ToString());
+            var context = new Xbim3DModelContext(ifcModel);
+            context.CreateContext();
+
+            DrawingControl.Model = ifcModel;
+            DrawingControl.LoadGeometry(ifcModel);*/
 
             DG.ItemsSource = LoadCollectionData();
         }

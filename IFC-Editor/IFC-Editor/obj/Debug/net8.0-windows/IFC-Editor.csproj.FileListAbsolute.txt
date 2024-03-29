@@ -73,3 +73,6 @@ C:\Users\Seiya\source\repos\ifc-editor\IFC-Editor\IFC-Editor\bin\Debug\net8.0-wi
 C:\Users\Seiya\source\repos\ifc-editor\IFC-Editor\IFC-Editor\bin\Debug\net8.0-windows\Xbim.Tessellator.dll
 C:\Users\Seiya\source\repos\ifc-editor\IFC-Editor\IFC-Editor\bin\Debug\net8.0-windows\Xbim.Presentation.dll
 C:\Users\Seiya\source\repos\ifc-editor\IFC-Editor\IFC-Editor\bin\Debug\net8.0-windows\de\Xbim.Presentation.resources.dll
+C:\Users\Seiya\source\repos\ifc-editor\IFC-Editor\IFC-Editor\bin\Debug\net8.0-windows\Esent.Interop.dll
+C:\Users\Seiya\source\repos\ifc-editor\IFC-Editor\IFC-Editor\bin\Debug\net8.0-windows\Xbim.Ifc4x3.dll
+C:\Users\Seiya\source\repos\ifc-editor\IFC-Editor\IFC-Editor\bin\Debug\net8.0-windows\Xbim.IO.Esent.dll
