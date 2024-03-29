@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿using IFC_Editor.Models;
+using PropertyTools.Wpf;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -19,11 +21,20 @@ namespace IFC_Editor
         public MainWindow()
         {
             InitializeComponent();
+
+            DG.ItemsSource = LoadCollectionData();
         }
 
         private void DrawingControl_MouseMove(object sender, MouseEventArgs e)
         {
 
+        }
+
+        private List<Blog> LoadCollectionData()
+        {
+            var db = new BloggingContext();
+            List<Blog> blogs = db.Blogs.OrderBy(b => b.BlogId).ToList();
+            return blogs;
         }
     }
 }

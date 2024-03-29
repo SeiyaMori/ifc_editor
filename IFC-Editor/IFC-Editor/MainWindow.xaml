@@ -60,8 +60,7 @@
 
             <StackPanel Grid.Row="0" Grid.Column="1" Margin="5,0,0,0">
                 <Label>Elements List</Label>
-                
-
+                <DataGrid HorizontalAlignment="Left" Margin="12,21,0,0" Name="DG" VerticalAlignment="Top" Width="Auto" />
             </StackPanel>
 
         </Grid>
