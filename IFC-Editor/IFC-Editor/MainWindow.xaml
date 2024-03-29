@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IFC_Editor"
+        xmlns:xbim="http://schemas.Xbim.com/Presentation"
         mc:Ignorable="d"
         Title="IFC Editor" Height="600" Width="1000">
     <Grid>
@@ -39,13 +40,27 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <StackPanel Grid.Row="0" Grid.Column="0" Margin="5,0,0,0">
+            <StackPanel Grid.Row="0" Grid.Column="0" Margin="5">
                 <Label>3D Viewer</Label>
-
+                <xbim:DrawingControl3D
+                    Height="400"
+                    x:Name="DrawingControl"
+                    SelectedEntity="{Binding Path=SelectedItem, ElementName=MainWindow, Mode=TwoWay}"
+                    Model="{Binding}"
+                    Focusable="True"
+                    MouseMove="DrawingControl_MouseMove">
+                        <xbim:DrawingControl3D.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                                <GradientStop Color="#D1CBC4" Offset="1"/>
+                                <GradientStop Color="#C8FCFF"/>
+                            </LinearGradientBrush>
+                        </xbim:DrawingControl3D.Background>
+                    </xbim:DrawingControl3D>    
             </StackPanel>
 
             <StackPanel Grid.Row="0" Grid.Column="1" Margin="5,0,0,0">
                 <Label>Elements List</Label>
+                
 
             </StackPanel>
 

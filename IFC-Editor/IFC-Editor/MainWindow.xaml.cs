@@ -21,6 +21,9 @@ namespace IFC_Editor
             InitializeComponent();
         }
 
+        private void DrawingControl_MouseMove(object sender, MouseEventArgs e)
+        {
 
+        }
     }
 }

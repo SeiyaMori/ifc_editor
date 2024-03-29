@@ -59,3 +59,17 @@ C:\Users\Seiya\source\repos\ifc-editor\IFC-Editor\IFC-Editor\bin\Debug\net8.0-wi
 C:\Users\Seiya\source\repos\ifc-editor\IFC-Editor\IFC-Editor\bin\Debug\net8.0-windows\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\Seiya\source\repos\ifc-editor\IFC-Editor\IFC-Editor\bin\Debug\net8.0-windows\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\Seiya\source\repos\ifc-editor\IFC-Editor\IFC-Editor\obj\Debug\net8.0-windows\IFC-Editor.csproj.Up2Date
+C:\Users\Seiya\source\repos\ifc-editor\IFC-Editor\IFC-Editor\bin\Debug\net8.0-windows\HelixToolkit.dll
+C:\Users\Seiya\source\repos\ifc-editor\IFC-Editor\IFC-Editor\bin\Debug\net8.0-windows\HelixToolkit.Wpf.dll
+C:\Users\Seiya\source\repos\ifc-editor\IFC-Editor\IFC-Editor\bin\Debug\net8.0-windows\PropertyTools.dll
+C:\Users\Seiya\source\repos\ifc-editor\IFC-Editor\IFC-Editor\bin\Debug\net8.0-windows\PropertyTools.Wpf.dll
+C:\Users\Seiya\source\repos\ifc-editor\IFC-Editor\IFC-Editor\bin\Debug\net8.0-windows\Xbim.Common.dll
+C:\Users\Seiya\source\repos\ifc-editor\IFC-Editor\IFC-Editor\bin\Debug\net8.0-windows\Xbim.Geometry.Engine.Interop.dll
+C:\Users\Seiya\source\repos\ifc-editor\IFC-Editor\IFC-Editor\bin\Debug\net8.0-windows\Xbim.Ifc.dll
+C:\Users\Seiya\source\repos\ifc-editor\IFC-Editor\IFC-Editor\bin\Debug\net8.0-windows\Xbim.Ifc2x3.dll
+C:\Users\Seiya\source\repos\ifc-editor\IFC-Editor\IFC-Editor\bin\Debug\net8.0-windows\Xbim.Ifc4.dll
+C:\Users\Seiya\source\repos\ifc-editor\IFC-Editor\IFC-Editor\bin\Debug\net8.0-windows\Xbim.IO.MemoryModel.dll
+C:\Users\Seiya\source\repos\ifc-editor\IFC-Editor\IFC-Editor\bin\Debug\net8.0-windows\Xbim.ModelGeometry.Scene.dll
+C:\Users\Seiya\source\repos\ifc-editor\IFC-Editor\IFC-Editor\bin\Debug\net8.0-windows\Xbim.Tessellator.dll
+C:\Users\Seiya\source\repos\ifc-editor\IFC-Editor\IFC-Editor\bin\Debug\net8.0-windows\Xbim.Presentation.dll
+C:\Users\Seiya\source\repos\ifc-editor\IFC-Editor\IFC-Editor\bin\Debug\net8.0-windows\de\Xbim.Presentation.resources.dll
