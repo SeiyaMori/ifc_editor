@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace IFC_Editor.Migrations
 {
     [DbContext(typeof(ElementContext))]
-    [Migration("20240329211628_InitialCreate")]
+    [Migration("20240330154954_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
