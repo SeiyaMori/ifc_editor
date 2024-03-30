@@ -58,6 +58,33 @@ namespace IFC_Editor
 
 
             DG.ItemsSource = LoadElementData();
+
+            // 3D view
+            Loaded += MainWindow_Loaded;
+
+            openFile();
+        }
+
+        void MainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            ModelProvider.Refresh();
+        }
+
+        private ObjectDataProvider ModelProvider
+        {
+            get
+            {
+                return MainFrame.DataContext as ObjectDataProvider;
+            }
+        }
+
+        public void openFile()
+        {
+            var model = IfcStore.Open(@"C:\Users\Seiya\Desktop\example_building.ifc");
+            var context = new Xbim3DModelContext(model);
+            context.CreateContext();
+            ModelProvider.ObjectInstance = model;
+            //ModelProvider.Refresh();
         }
 
         private void DrawingControl_MouseMove(object sender, MouseEventArgs e)
