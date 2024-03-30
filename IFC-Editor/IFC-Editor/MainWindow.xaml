@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:IFC_Editor"
         xmlns:xbim="http://schemas.Xbim.com/Presentation"
         mc:Ignorable="d"
-        Title="IFC Editor" Height="600" Width="1000">
+        Title="IFC Editor" Height="600" Width="1000"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}">
+
     <Grid>
 
         <Grid.RowDefinitions>
