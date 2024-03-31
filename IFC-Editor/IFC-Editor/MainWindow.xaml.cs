@@ -1,5 +1,4 @@
-﻿using IFC_Editor.Models;
-using PropertyTools.Wpf;
+﻿using PropertyTools.Wpf;
 using System.Reflection.Metadata;
 using System.Text;
 using System.Windows;
