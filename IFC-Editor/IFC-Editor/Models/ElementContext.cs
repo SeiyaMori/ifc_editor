@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 
+namespace IFC_Editor.Models;
 
 public class ElementContext : DbContext
 {
@@ -20,13 +21,4 @@ public class ElementContext : DbContext
     // special "local" folder for your platform.
     protected override void OnConfiguring(DbContextOptionsBuilder options)
         => options.UseSqlite($"Data Source={DbPath}");
-}
-
-
-public class Element
-{
-    public string ElementId { get; set; }
-    public string Name { get; set; }
-    public string ElementType { get; set; }
-    public bool Exclude { get; set; }
 }
