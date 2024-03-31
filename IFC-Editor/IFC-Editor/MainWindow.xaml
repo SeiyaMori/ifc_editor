@@ -64,9 +64,9 @@
                 </presentation:DrawingControl3D>
             </StackPanel>
 
-            <StackPanel Grid.Row="0" Grid.Column="1" Margin="5,0,0,0">
+            <StackPanel Grid.Row="0" Grid.Column="1" Margin="5">
                 <Label>Elements List</Label>
-                <DataGrid AutoGenerateColumns="False" HorizontalAlignment="Left" Margin="12,21,0,0" Name="DG" Width="305" Height="400" ScrollViewer.VerticalScrollBarVisibility="Visible" RowBackground="LightYellow" AlternatingRowBackground="LightBlue" >
+                <DataGrid AutoGenerateColumns="False" HorizontalAlignment="Left" Margin="0" Name="DG" Height="400" ScrollViewer.VerticalScrollBarVisibility="Visible" RowBackground="LightYellow" AlternatingRowBackground="LightBlue" >
                     <DataGrid.Columns>
 
                         <DataGridTextColumn Header="ElementId" Binding="{Binding ElementId}" IsReadOnly="True"/>
