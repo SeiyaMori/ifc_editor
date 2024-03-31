@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace IFC_Editor.Migrations
 {
     [DbContext(typeof(ElementContext))]
-    [Migration("20240330154954_InitialCreate")]
+    [Migration("20240331150831_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -26,6 +26,9 @@ namespace IFC_Editor.Migrations
                     b.Property<string>("ElementType")
                         .IsRequired()
                         .HasColumnType("TEXT");
+
+                    b.Property<bool>("Exclude")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Name")
                         .IsRequired()

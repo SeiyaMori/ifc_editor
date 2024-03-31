@@ -16,7 +16,8 @@ namespace IFC_Editor.Migrations
                 {
                     ElementId = table.Column<string>(type: "TEXT", nullable: false),
                     Name = table.Column<string>(type: "TEXT", nullable: false),
-                    ElementType = table.Column<string>(type: "TEXT", nullable: false)
+                    ElementType = table.Column<string>(type: "TEXT", nullable: false),
+                    Exclude = table.Column<bool>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {

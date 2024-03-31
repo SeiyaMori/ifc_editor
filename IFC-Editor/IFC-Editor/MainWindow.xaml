@@ -55,18 +55,28 @@
                     Model="{Binding}"
                     Focusable="True"
                     MouseMove="DrawingControl_MouseMove">
-                        <presentation:DrawingControl3D.Background>
-                            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
-                                <GradientStop Color="#D1CBC4" Offset="1"/>
-                                <GradientStop Color="#C8FCFF"/>
-                            </LinearGradientBrush>
-                        </presentation:DrawingControl3D.Background>
-                    </presentation:DrawingControl3D>    
+                    <presentation:DrawingControl3D.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="#D1CBC4" Offset="1"/>
+                            <GradientStop Color="#C8FCFF"/>
+                        </LinearGradientBrush>
+                    </presentation:DrawingControl3D.Background>
+                </presentation:DrawingControl3D>
             </StackPanel>
 
             <StackPanel Grid.Row="0" Grid.Column="1" Margin="5,0,0,0">
                 <Label>Elements List</Label>
-                <DataGrid HorizontalAlignment="Left" Margin="12,21,0,0" Name="DG" VerticalAlignment="Top" Width="Auto" Height="400" ScrollViewer.VerticalScrollBarVisibility="Visible"/>
+                <DataGrid AutoGenerateColumns="False" HorizontalAlignment="Left" Margin="12,21,0,0" Name="DG" Width="305" Height="400" ScrollViewer.VerticalScrollBarVisibility="Visible" RowBackground="LightYellow" AlternatingRowBackground="LightBlue" >
+                    <DataGrid.Columns>
+
+                        <DataGridTextColumn Header="ElementId" Binding="{Binding ElementId}" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Name" Binding="{Binding Name}" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="ElementType" Binding="{Binding ElementType}" IsReadOnly="True"/>
+                        <DataGridCheckBoxColumn Header="Exclude" Binding="{Binding Exclude}" IsReadOnly="False"/>
+
+
+                    </DataGrid.Columns>
+                </DataGrid>
             </StackPanel>
 
         </Grid>

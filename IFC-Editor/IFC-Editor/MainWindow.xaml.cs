@@ -34,6 +34,7 @@ namespace IFC_Editor
             ElementContext db = new ElementContext();
 
             // Clear SQLite
+            
             List<Element> ExistingItems = LoadElementData();
             foreach (Element item in ExistingItems)
             {
@@ -94,7 +95,7 @@ namespace IFC_Editor
 
         private void CreateElement(ElementContext db, string ElementId, string Name, string ElementType)
         {
-            db.Add(new Element { ElementId = ElementId, Name = Name, ElementType = ElementType});
+            db.Add(new Element { ElementId = ElementId, Name = Name, ElementType = ElementType, Exclude = false});
         }
 
         private List<Element> LoadElementData()
