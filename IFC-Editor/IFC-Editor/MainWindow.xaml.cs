@@ -62,7 +62,7 @@ namespace IFC_Editor
             openFile();
 
             // 3D viewport
-            LoadPage3D();
+            //LoadPage3D();
         }
 
         void MainWindow_Loaded(object sender, RoutedEventArgs e)
@@ -90,7 +90,7 @@ namespace IFC_Editor
         {
 
         }
-
+        /*
         // Page 3D
         public void LoadPage3D()
         {
@@ -208,6 +208,6 @@ namespace IFC_Editor
 
             // Apply the viewport to the page so it will be rendered.
             //Page3D = myViewport3D;
-        }
+        }*/
     }
 }
